@@ -1,0 +1,5 @@
+# LeanBlame trust policy. See docs/decisions.md in the leanblame repository.
+records = ["records/"]   # records repositories (local directories)
+exclude = []              # approve records this library refuses to count
+required_signers = 1      # distinct live approvals a declaration needs
+allowed_signers = "any"   # or a list of provider:id
