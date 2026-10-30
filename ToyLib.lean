@@ -186,24 +186,6 @@ def IsSeparable (ω : BipartiteMat m n) : Prop :=
     IsDensity σ ∧
     ω = ∑ i : Fin k, (p i : ℂ) • tensor (ρ i) σ
 
-
-/-- The identity map is a quantum channel. -/
-@[trusted "a30a4368-b5ed-402d-961f-fee1a7808c13"]
-theorem isQuantumChannel_id [NeZero m] : IsQuantumChannel (LinearMap.id : Mat m →ₗ[ℂ] Mat m) :=
-  ⟨fun _ => rfl, fun _ h => h⟩
-
-/-- A constant family whose Hamiltonian has a positive spectral gap is gapped. -/
-@[trusted "7de85122-a8c3-473c-b577-b65d55f00fe0"]
-theorem isGapped_const {d : ℕ} (H : Hamiltonian d) {g : ℝ} (hg : spectralGap H = some g) (hpos : 0 < g) :
-    IsGapped (fun _ : ℕ => H) :=
-  ⟨g, hpos, fun _ => ⟨0, fun _ => ⟨g, hg, le_rfl⟩⟩⟩
-
-/-- The tensor product `ρ ⊗ σ` of two density operators is separable. -/
-@[trusted "0e50d074-7699-4dc9-a76f-5b5dcf42db16"]
-theorem isSeparable_tensor {ρ : Mat m} {σ : Mat n} (hρ : IsDensity ρ) (hσ : IsDensity σ) :
-    IsSeparable (tensor ρ σ) :=
-  ⟨1, fun _ => 1, fun _ => ρ, σ, ⟨fun _ => zero_le_one, by simp⟩, fun _ => hρ, hσ, by simp⟩
-
 end
 
 end QuantumInformation
