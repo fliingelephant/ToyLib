@@ -10,7 +10,7 @@ rev = "v4.35.0"
 [[require]]
 name = "leanblame"
 git = "https://github.com/fliingelephant/leanblame.git"
-rev = "054644d4a2210f03556db14328713fce80b506f4"
+rev = "45d200b054349a9c3cb15a6fa0cadfb875102020"
 subDir = "cli"
 
 [[lean_lib]]

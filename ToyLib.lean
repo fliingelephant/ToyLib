@@ -189,3 +189,20 @@ def IsSeparable (ω : BipartiteMat m n) : Prop :=
 end
 
 end QuantumInformation
+
+attribute [trusted "f53d0693-f5c2-4dc7-86d2-45cb569b9f18"] QuantumInformation.energySpectrum
+attribute [trusted "318ae56f-61cf-4537-8aea-f15059d5e6ac"] QuantumInformation.tensor
+attribute [trusted "1e37bea6-ef49-4c76-b2ec-bcf19842c1a3"] QuantumInformation.IsTracePreserving
+attribute [trusted "5b0764f8-0bcd-475e-b8f0-03a4e47b1a02"] QuantumInformation.IsPPT
+attribute [trusted "d4b15a84-d708-40d7-87d6-44f90d104c7a"] QuantumInformation.BipartiteMat
+attribute [trusted "18adb37a-e10d-4e1b-9ee0-f80fa890c9d1"] QuantumInformation.IsDensity
+attribute [trusted "e162c833-012c-44e9-8076-bd83ac9d3685"] QuantumInformation.Hamiltonian
+attribute [trusted "27397b36-f8f0-467c-8110-fd1e0be84db3"] QuantumInformation.excitedEnergies
+attribute [trusted "0e8b505d-6403-4f1c-aeb4-d0a6a2a9baff"] QuantumInformation.partialTranspose
+attribute [trusted "7b6bb2d5-f339-4c47-ae3e-703059af525e"] QuantumInformation.partialTraceRight
+attribute [trusted "c2e2a468-377d-46a2-b7a9-65bc2023a6d2"] QuantumInformation.IsProbabilityVector
+attribute [trusted "e4ba12e6-bb8c-42b3-9037-f56b86fdde17"] QuantumInformation.groundEnergy
+attribute [trusted "7cd8879c-50fd-4093-9df3-457a1a912fd0"] QuantumInformation.spectralGap
+attribute [trusted "aa0ee316-6a85-4a19-931d-4d8cf91c8576"] QuantumInformation.partialTraceLeft
+attribute [trusted "91c61c28-f608-41ed-b50a-794078c11e2e"] QuantumInformation.Mat
+attribute [trusted "198c3caf-21f9-479a-b3b8-24fcf1346e1b"] QuantumInformation.Operator
